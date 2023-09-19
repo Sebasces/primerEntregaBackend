@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "code": 15,
+    "title": "Ipad",
+    "description": "Ipad Apple 6ta Generacion.Estado nuevo",
+    "price": 600,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "code": 17,
+    "title": "Iphone 14",
+    "description": "Iphone 14, de 128GB. Estado nuevo ",
+    "price": 900,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 3,
+    "code": 17,
+    "title": "Samsun Galaxy s23",
+    "description": "Samsun Galaxy s23, de 256GB. Estado nuevo ",
+    "price": 650,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 4,
+    "code": 18,
+    "title": "Iphone 13 Pro",
+    "description": "Iphone 13 Pro 128GB. Estado Nuevo",
+    "price": 850,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 5,
+    "code": 19,
+    "title": "Macbook Pro",
+    "description": "Macbook Pro SSD500GB 8GBRAM. Estado Nuevo",
+    "price": 1800,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 6,
+    "code": 19,
+    "title": "Macbook Air",
+    "description": "Macbook Air SSD128GB 4GBRAM. Estado Nuevo",
+    "price": 1500,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 7,
+    "code": 19,
+    "title": "Iphone 12 Pro",
+    "description": "Iphone 12 Pro 128GB. Estado Nuevo",
+    "price": 700,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 8,
+    "code": 19,
+    "title": "Ipad Pro",
+    "description": "Ipad Pro ultima generación. Estado Nuevo",
+    "price": 600,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 9,
+    "code": 19,
+    "title": "Apple Watch",
+    "description": "Apple Watch tercera generación. Estado Nuevo",
+    "price": 350,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 10,
+    "code": 19,
+    "title": "Air Pods",
+    "description": "Air Pods2. Estado Nuevo",
+    "price": 200,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  },
+  {
+    "id": 11,
+    "code": 28,
+    "title": "Iphone 14 Pro",
+    "description": "Iphone 14 Pro con 256GB. Estado Nuevo",
+    "price": 1300,
+    "thumbnail": "sin imagen",
+    "stock": 40
+  },
+  {
+    "id": 12,
+    "code": 45,
+    "title": "Ipad",
+    "description": "Ipad Apple 6ta Generacion.Estado nuevo",
+    "price": 600,
+    "thumbnail": "sin imagen",
+    "stock": 25
+  }
+]
