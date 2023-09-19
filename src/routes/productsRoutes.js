@@ -28,7 +28,7 @@ router.get("/", async(req,res) => {
 router.get("/:pID",async (req,res)=> {
     try {
     const productpID = parseInt(req.params.pID)
-    const product = await productService.getPrductsByID(productpID)
+    const product = await productService.getProductsByID(productpID)
     res.json(product)
 } catch (error) {
         res.json({status:"error",message:error.message})
