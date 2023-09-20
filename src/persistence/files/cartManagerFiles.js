@@ -71,21 +71,25 @@ async addproductToCart(cartID, productId) {
         const cart = JSON.parse(contenidoString)
         const carrito = cart.find((item)=> item.cartId === cartID);
         if(cart){
-            const existProduct = carrito.products.find((product)=> product.id === productId);
+            const existProduct = carrito.products.find((elem)=> elem.idProduct === productId);
             if (existProduct) {
                 existProduct.quantity +=1;
+                console.log(existProduct)
+                
             } 
             else {
                 const newProduct ={
                     idProduct: productId,
                     quantity: 1,
+
                 }
-                carrito.products.push(newProduct)
-                await fs.promises.writeFile(this.pathFile,JSON.stringify(carrito, null, '\t'))
+                carrito.products.push(newProduct)}
+
+                await fs.promises.writeFile(this.pathFile,JSON.stringify([carrito], null, '\t'))
                 return "producto agregado"
             } 
         }
-    }}
+    }
             catch (error) {
                 console.log(error.message)
                 throw error;

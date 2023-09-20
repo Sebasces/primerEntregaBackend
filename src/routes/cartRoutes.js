@@ -42,7 +42,7 @@ router.post("/:cid/product/:pid", async (req, res)=> {
         const cartId = parseInt(req.params.cid);
         const productId = parseInt(req.params.pid);
         const productToCart = await cartService.addproductToCart(cartId, productId);
-        res.json({message: "Agregando producto al carrito...", data: productToCart});   
+        res.json({message: "Agregando producto al carrito..."});   
 
     } catch (error) {
         res.json({status:"error",message:error.message});
