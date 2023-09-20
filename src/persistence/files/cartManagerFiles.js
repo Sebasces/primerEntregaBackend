@@ -33,7 +33,7 @@ async createCart(){
             const contenidoString = await fs.promises.readFile(this.pathFile,"utf-8");
             const cart = JSON.parse(contenidoString);
             if (cart.length==0){this.newId =1} 
-                    else {this.newId=cart[cart.length-1].id+1}
+                    else {this.newId=cart[cart.length-1].cartId+1}
             const newCart = {
                 cartId: this.newId,
                 products:[]
@@ -98,5 +98,3 @@ async addproductToCart(cartID, productId) {
 
 
 }
-
-
