@@ -64,34 +64,33 @@ async getCartById(cartId) {
 
 }
 
-async addproductToCart(cartId, productId){
+async addproductToCart(cartID, productId) {
     try {
-        const carrito = await this.getCart();
-        const cart = await this.getCartById(parseInt(cartId));
-        const product = await productService.getPrductsByID(parseInt(productId));
-       
-        if (cart) {
-            const cartIndex = carrito.findIndex((elem) => elem.cartId === cart.cartId);
-            if (product){
-                const productIndex = cart.products.findIndex((elem) => elem.id === product.id);
-
-            if (productIndex !== -1) {
-                carrito[cartIndex].products[productIndex].quantity += 1;
-
-            } else { 
-                carrito[cartIndex].products.push({id: parseInt(productId), quantity: 1});
-            }
-    
-            await fs.promises.writeFile(this.pathFile, JSON.stringify(cart, null, "\t"));
-            return (carrito[cartIndex].product[productIndex]);
-            }
-            
+        if (this.fileExist ()){
+        const contenidoString = await fs.promises.readFile(this.pathFile,"utf-8");
+        const cart = JSON.parse(contenidoString)
+        const carrito = cart.find((item)=> item.cartId === cartID);
+        if(cart){
+            const existProduct = carrito.products.find((product)=> product.id === productId);
+            if (existProduct) {
+                existProduct.quantity +=1;
+            } 
+            else {
+                const newProduct ={
+                    idProduct: productId,
+                    quantity: 1,
+                }
+                carrito.products.push(newProduct)
+                await fs.promises.writeFile(this.pathFile,JSON.stringify(carrito, null, '\t'))
+                return "producto agregado"
+            } 
         }
-
-    } catch (error) {
-        console.log("Error al agregar producto al carrito:", error)
-    }
-}
+    }}
+            catch (error) {
+                console.log(error.message)
+                throw error;
+            }}
+        
 
 
 }
