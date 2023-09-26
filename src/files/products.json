@@ -3,7 +3,7 @@
 		"id": 1,
 		"code": 15,
 		"title": "Ipad",
-		"description": "Ipad Apple 6ta Generacion.Estado nuevo",
+		"description": "Ipad Apple 6ta Generacion",
 		"price": 600,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -12,7 +12,7 @@
 		"id": 2,
 		"code": 17,
 		"title": "Iphone 14",
-		"description": "Iphone 14, de 128GB. Estado nuevo ",
+		"description": "Iphone 14, de 128GB",
 		"price": 900,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -21,7 +21,7 @@
 		"id": 3,
 		"code": 17,
 		"title": "Iphone XR",
-		"description": "Iphone XR, de 128GB. Estado nuevo ",
+		"description": "Iphone XR, de 128GB",
 		"price": 500,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -30,7 +30,7 @@
 		"id": 4,
 		"code": 18,
 		"title": "Iphone 13 Pro",
-		"description": "Iphone 13 Pro 128GB. Estado Nuevo",
+		"description": "Iphone 13 Pro 128GB",
 		"price": 850,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -39,7 +39,7 @@
 		"id": 5,
 		"code": 19,
 		"title": "Macbook Pro",
-		"description": "Macbook Pro SSD500GB 8GBRAM. Estado Nuevo",
+		"description": "Macbook Pro SSD500GB 8GBRAM",
 		"price": 1800,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -48,7 +48,7 @@
 		"id": 6,
 		"code": 19,
 		"title": "Macbook Air",
-		"description": "Macbook Air SSD128GB 4GBRAM. Estado Nuevo",
+		"description": "Macbook Air SSD128GB 4GBRAM",
 		"price": 1500,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -57,7 +57,7 @@
 		"id": 7,
 		"code": 19,
 		"title": "Iphone 12 Pro",
-		"description": "Iphone 12 Pro 128GB. Estado Nuevo",
+		"description": "Iphone 12 Pro 128GB",
 		"price": 700,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -66,7 +66,7 @@
 		"id": 8,
 		"code": 19,
 		"title": "Ipad Pro",
-		"description": "Ipad Pro ultima generación. Estado Nuevo",
+		"description": "Ipad Pro ultima generación",
 		"price": 600,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -75,7 +75,7 @@
 		"id": 9,
 		"code": 19,
 		"title": "Apple Watch",
-		"description": "Apple Watch tercera generación. Estado Nuevo",
+		"description": "Apple Watch tercera generación",
 		"price": 350,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -84,7 +84,7 @@
 		"id": 10,
 		"code": 19,
 		"title": "Air Pods",
-		"description": "Air Pods2. Estado Nuevo",
+		"description": "Air Pods2",
 		"price": 200,
 		"thumbnail": "sin imagen",
 		"stock": 25
@@ -93,7 +93,7 @@
 		"id": 11,
 		"code": 28,
 		"title": "Iphone 14 Pro",
-		"description": "Iphone 14 Pro con 256GB. Estado Nuevo",
+		"description": "Iphone 14 Pro con 256GB",
 		"price": 1300,
 		"thumbnail": "sin imagen",
 		"stock": 40
