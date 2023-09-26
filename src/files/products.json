@@ -100,11 +100,11 @@
 	},
 	{
 		"id": 12,
-		"code": 25,
-		"title": "Producto Agregado",
-		"description": "Producto Agregado",
-		"price": 850,
-		"thumbnail": "sin imagen",
-		"stock": 25
+		"title": "Iphone 15",
+		"description": "Iphone 15 256gb",
+		"price": 1400,
+		"code": 29,
+		"thumbnail": "thumbnail",
+		"stock": 259
 	}
 ]

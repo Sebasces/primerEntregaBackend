@@ -30,6 +30,6 @@ socketClient.on("productsArray", (dataProducts)=>{
     productList.innerHTML=productsElms;
 });
 
-const deleteProduct = (productId)=>{
-    console.log(productId);
-};
+let deleteProduct = (productId) =>{
+    socketClient.emit("deleteProduct", productId)
+}

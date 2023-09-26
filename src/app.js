@@ -8,9 +8,6 @@ import { productsRouter } from "./routes/productsRoutes.js";
 import { cartRouter } from "./routes/cartRoutes.js";
 import { viewsRouter } from "./routes/viewsRoutes.js";
 
-
-
-
 const port = 8080;
 
 const app = express ();
@@ -39,11 +36,18 @@ app.use(viewsRouter);
 io.on("connection", async (socket)=>{
     console.log("cliente conectado")
     const products = await productService.getProducts();
-    socket.emit("productsArray", products)
-    socket.on("addProduct", async(product)=>{
-        const result = await productService.addProduct(product);
+    socket.emit("productsArray", products);
+    socket.on("addProduct", async (product)=> {
+        const results = await productService.addProduct(product);
         const products = await productService.getProducts();
         io.emit("productsArray", products);
     });
+
+    socket.on("deleteProduct", async (pID) => { 
+        const deleteItem = await productService.deleteProduct(pID);
+        const products = await productService.getProducts();
+            io.emit("productsArray", products);
+        });
+    
 });
 
