@@ -1,4 +1,4 @@
-import fs from "fs";
+/*import fs from "fs";
 
 
 export class productsManager {
@@ -109,4 +109,4 @@ async deleteProduct (pID) {
 
     
 }
-}
+}*/

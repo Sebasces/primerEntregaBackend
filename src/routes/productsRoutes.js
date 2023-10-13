@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { productService } from "../persistence/index.js";
+import { productService } from "../dao/index.js";
 
 
 ;
@@ -9,17 +9,19 @@ const router = Router ();
 //http://localhost:8080/api/products
 router.get("/", async(req,res) => {
         try {
-            const products = await productService.getProducts();
-            const limit = parseInt(req.query.limit);
+            const result =  await productService.getProducts();
+            res.json({status:"sucess", data:result})
+            console.log(result)
+            /*const limit = parseInt(req.query.limit);
             if (limit) {
                 const productsLimit = products.slice(0, limit);
                 res.send(productsLimit);
             } else {
                 res.send(products);
-            }
+            }*/
     
         } catch (error) {
-            res.send(error);
+            res.json({status:"error", message:error.message});
         }
     
     })
@@ -28,8 +30,8 @@ router.get("/", async(req,res) => {
 router.get("/:pID",async (req,res)=> {
     try {
     const productpID = parseInt(req.params.pID)
-    const product = await productService.getPrductsByID(productpID)
-    res.json(product)
+    const result = await productService.getProductsByID(productpID)
+    res.json({status:"sucess", data:result})
 } catch (error) {
         res.json({status:"error",message:error.message})
 }

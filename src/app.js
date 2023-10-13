@@ -3,10 +3,11 @@ import { __dirname }from  "./utils.js";
 import path from "path";
 import {engine} from "express-handlebars";
 import {Server} from "socket.io";
-import { productService } from "./persistence/index.js";
+import { productService } from "./dao/index.js";
 import { productsRouter } from "./routes/productsRoutes.js";
 import { cartRouter } from "./routes/cartRoutes.js";
 import { viewsRouter } from "./routes/viewsRoutes.js";
+import { dbConnection } from "./config/dbConnection.js";
 
 const port = 8080;
 
@@ -15,13 +16,14 @@ const app = express ();
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname,"/public")))
-
-
+app.use(express.urlencoded({extended:true}));
 
 
 const httpServer = app.listen(port,()=> console.log(`Servidor ejecutándose en el puerto ${port}`))
 
 const io = new Server (httpServer);
+
+dbConnection();
 
 app.engine('.hbs', engine({extname: '.hbs'}));
 app.set('view engine', '.hbs');
