@@ -1,0 +1,19 @@
+#product{
+    display:flex;
+    flex-direction: column;
+    width: 12%;
+    height:12em;
+    padding:1em;
+    align-content: center;
+    align-items: center;
+};
+
+#addProduct{
+    display:flex; 
+    flex-direction: column;
+    width: 12%;
+    height:12em;
+    padding:1em;
+    align-content: center;
+    align-items: center;
+}

@@ -24,7 +24,8 @@ socketClient.on("productsArray", (dataProducts)=>{
     dataProducts.forEach(product=>{
         productsElms +=
         `<li>
-            <p>Nombre: ${product.title}</p><button onclick="deleteProduct(${product.id})">Eliminar</button>
+            <p>Nombre: ${product.title}</p>
+            <button onclick="deleteProduct(${product._id})">Eliminar</button>
         </li>`
     });
     productList.innerHTML=productsElms;

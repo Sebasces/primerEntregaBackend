@@ -1,4 +1,4 @@
-import fs from "fs";
+/*import fs from "fs";
 import { productService } from "../index.js"; 
 
 export class cartManagerFiles {
@@ -97,4 +97,4 @@ async addproductToCart(cartID, productId) {
         
 
 
-}
+}*/

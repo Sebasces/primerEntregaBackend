@@ -5,8 +5,7 @@
 		"title": "Ipad",
 		"description": "Ipad Apple 6ta Generacion",
 		"price": 600,
-		"thumbnail": "sin imagen",
-		"stock": 25
+		"thumbnail": "/img_iphone.jpeg"
 	},
 	{
 		"id": 2,
@@ -97,14 +96,5 @@
 		"price": 1300,
 		"thumbnail": "sin imagen",
 		"stock": 40
-	},
-	{
-		"id": 12,
-		"title": "Iphone 15",
-		"description": "Iphone 15 256gb",
-		"price": 1400,
-		"code": 29,
-		"thumbnail": "thumbnail",
-		"stock": 259
 	}
 ]
