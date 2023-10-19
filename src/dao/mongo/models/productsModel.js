@@ -27,11 +27,17 @@ const productsSchema =  new mongoose.Schema({
     category:{
         type:String,
         required:true,
-        enums:["Celulares","Tablets","Computers"]
+        enums:["Celulares","Tablets","Computers"],
+        index: true
     },
     stock:{
         type:Number,
         required:true,
+
+        status: {
+            type: Boolean,
+            default: true,
+            required: true}
     }
     
 })

@@ -7,6 +7,9 @@ import { cartManagerMongo } from "./mongo/cartManagerMongo.js";
 
 
 
+//export const productManager = new ProductManager(path.join(__dirname, "/dao/fileSystem/data/products.json"));
+//export const cartManager = new CartManager(path.join(__dirname, "/dao/fileSystem/data/carts.json"));
+
 
 
 export const productService = new productManagerMongo ();

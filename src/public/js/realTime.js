@@ -19,18 +19,20 @@ addProductForm.addEventListener("submit",(e)=>{
 });
 
 socketClient.on("productsArray", (dataProducts)=>{
-    console.log(dataProducts);
+    //console.log(dataProducts);
     let productsElms="";
     dataProducts.forEach(product=>{
         productsElms +=
         `<li>
             <p>Nombre: ${product.title}</p>
+            <p>Category: ${product.category}</p>
+            <p>Precio: usd$${product.price}</p>
             <button onclick="deleteProduct(${product._id})">Eliminar</button>
         </li>`
     });
     productList.innerHTML=productsElms;
 });
 
-let deleteProduct = (productId) =>{
+const deleteProduct = (productId) =>{
     socketClient.emit("deleteProduct", productId)
 }

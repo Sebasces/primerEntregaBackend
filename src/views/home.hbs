@@ -5,7 +5,10 @@ Listado de productos
 <div>
 {{#each payload}}
     <br></br>
-    <li>Nombre del producto: {{this.title}}, precio: {{this.price}} <button onclick="addToCart(`{{this._id}}`)">Agregar al carrito</button></li>
+    <li>
+        <p>Nombre del producto: {{this.title}}</p>
+        <p>   precio: {{this.price}}  </p>
+      <button onclick="addToCart(`{{this._id}}`)">Agregar al carrito</button></li>
 {{/each}}
 </ul>
 </div>
